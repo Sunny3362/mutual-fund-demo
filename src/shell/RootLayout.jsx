@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import NavBar from '../components/NavBar.jsx';
 import Sidebar from '../components/Sidebar.jsx';
+import ChatWidget from '../components/ChatWidget.jsx';
 
 export default function RootLayout() {
 	return (
@@ -12,6 +13,7 @@ export default function RootLayout() {
 					<Outlet />
 				</main>
 			</div>
+			<ChatWidget />
 		</div>
 	);
 }
